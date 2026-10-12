@@ -47,14 +47,14 @@ RESET_COMMANDS = {
 }
 
 JOB_TIMEOUT = 3600  # seconds
-MAX_PROMPT_CHARS = 24000
+MAX_PROMPT_CHARS = 900000
 HISTORY_TAIL = 12
 MAX_IMAGE_BYTES = 5 * 1024 * 1024
 MAX_TOTAL_IMAGE_BYTES = 10 * 1024 * 1024
 MAX_IMAGES = 10
 ARG_CHUNK_SIZE = 24
 AUTO_RESET_THRESHOLD = (
-    150000  # auto-reset chat session if server tokens exceed this (0 to disable)
+    500000  # auto-reset chat session if server tokens exceed this (0 to disable)
 )
 
 MODELS = [
