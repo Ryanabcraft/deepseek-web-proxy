@@ -1,0 +1,46 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": "allow",
+  "autoupdate": "notify",
+  "providers": {
+    "deepseek-web": {
+      "package": "@opencode/ai/providers/openai-compatible",
+      "name": "DeepSeek Web Proxy (Free)",
+      "settings": {
+        "baseURL": "http://127.0.0.1:1337/v1",
+        "apiKey": "nah",
+        "timeout": 3600000,
+        "chunkTimeout": 3600000
+      },
+      "models": {
+        "deepseek-chat": {
+          "name": "DeepSeek Chat (Web)",
+          "capabilities": {
+            "tools": true,
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 950000,
+            "output": 128000
+          }
+        },
+        "deepseek-reasoner": {
+          "name": "DeepSeek Reasoner (Web)",
+          "capabilities": {
+            "tools": true,
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 950000,
+            "output": 128000
+          },
+          "compatibility": {
+            "reasoningField": "reasoning_content"
+          }
+        }
+      }
+    }
+  }
+}
