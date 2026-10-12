@@ -1,6 +1,6 @@
 # DeepSeek Web Proxy
 
-**Versão adaptada — Feito por RYANAB AND GPT 6.1 SOL.**
+**Versão adaptada — Feito por RYANAB, GPT 6.1 SOL e DEEPSEEK V4.1.**
 
 OpenAI-compatible local API proxy for DeepSeek Web (`chat.deepseek.com`).
 
